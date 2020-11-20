@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smart"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/starting"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="70dp"
+        android:shadowColor="#FFF"
+        android:shadowDx="50"
+        android:shadowDy="50"
+        android:shadowRadius="5"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Smart City  "
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="35dp" />
+
+
+    <EditText
+        android:id="@+id/Id"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/starting"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFF"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFF"
+        android:hint=" Email Id / Phone Number   " />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Id"
+        android:inputType="textPassword"
+        android:textColorHint="#FFF"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:hint="Password" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_below="@id/Password"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
